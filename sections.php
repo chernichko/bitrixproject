@@ -20,14 +20,6 @@ $this->addExternalCss("/bitrix/css/main/bootstrap.css");
 
         <?
 
-        if(empty($arResult["VARIABLES"]["SMART_FILTER_PATH"])){
-            $re = '/^\/.*\/filter\/(.*)\/apply\//';
-            $str = Bitrix\Main\Context::getCurrent()->getRequest()->getRequestedPage();
-            preg_match($re, $str, $matches);
-            $arResult["VARIABLES"]["SMART_FILTER_PATH"] =$matches[1];
-        }
-
-
         $APPLICATION->IncludeComponent(
             "bitrix:catalog.smart.filter",
             "tb_smart_filter",
