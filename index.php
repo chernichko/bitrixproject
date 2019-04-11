@@ -220,7 +220,7 @@ $APPLICATION->SetTitle("Каталог");
 			1 => "",
 		),
 		"FILTER_HIDE_ON_MOBILE" => "N",
-		"FILTER_NAME" => "",
+		"FILTER_NAME" => "arrFilter",
 		"FILTER_OFFERS_FIELD_CODE" => array(
 			0 => "PREVIEW_PICTURE",
 			1 => "DETAIL_PICTURE",
@@ -499,6 +499,7 @@ $APPLICATION->SetTitle("Каталог");
 			"element" => "#SECTION_CODE#/#ELEMENT_CODE#/#PRODUCT_URL#",
 			"compare" => "compare/",
 			"smart_filter" => "#SECTION_CODE#/filter/#SMART_FILTER_PATH#/apply/",
+                        "smart_filter_index" => "filter/#SMART_FILTER_PATH#/apply/",
 		)
 	),
 	false
